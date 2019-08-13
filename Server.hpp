@@ -1,4 +1,7 @@
 
+#ifndef __M_SRV_H__
+#define __M_SRV_H__	
+
 #include <iostream>
 #include <fstream>  
 #include <stdio.h>  
@@ -168,9 +171,4 @@ class P2PServer{
     return true;
     }
 };
-
-int main(){
-  P2PServer srv;
-  srv.Start(9000);
-  return 0;
-}
+#endif
