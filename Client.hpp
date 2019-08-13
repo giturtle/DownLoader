@@ -1,5 +1,8 @@
 
 
+#ifndef __M_CLI_H__
+#define __M_CLI_H__
+
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -309,9 +312,4 @@ class P2PClient{
       }
     }
 };
-
-int main(){
-  P2PClient client(9000);
-  client.Start();
-  return 0;
-}
+#endif
